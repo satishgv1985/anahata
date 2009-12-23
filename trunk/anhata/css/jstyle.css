@@ -1,88 +1,433 @@
-@charset "utf-8";
+
 /* CSS Document */
 /* Written by Jijeesh Kachattil on 16/12/2009 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
-body{line-height: 1;}
-ol, ul{list-style: none;}
-blockquote, q{quotes: none;}
-blockquote:before, blockquote:after,q:before, q:after {content: '';	content: none;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body
+{
+	line-height: 1;
+}
+ol, ul
+{
+	list-style: none;
+}
+blockquote, q
+{
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after
+{
+	content: '';
+	content: none;
+}
 /* remember to define focus styles! */
-:focus{outline: 0;}
+:focus
+{
+	outline: 0;
+}
 /* remember to highlight inserts somehow! */
-ins{text-decoration: none;}
-del{text-decoration: line-through;}
-img, div { behavior: url(Scripts/iepngfix.htc) }
+ins
+{
+	text-decoration: none;
+}
+del
+{
+	text-decoration: line-through;
+}
+img, div
+{
+	behavior: url(Scripts/iepngfix.htc);
+}
 /* page specific styles starts here */
-body{background:url(../images/jbody-bg.png) repeat-x #cdef53; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; color:#3a5d00; }
-.jwrapper{width:980px; margin:0 auto; background:url(../images/jlight-spots.png) no-repeat;}
-.jheader{width:980px;height:95px;overflow:hidden;}
-.jheader .jlogo{float:left;padding:32px 0 0 0;width:232px;height:62px;}
-.jheader .jlogo-text{font-weight:bold;color:#000;padding:82px 0 0px 13px; height:0px; background:url(../images/indian-flag.png) no-repeat right;} 
-.jheader .jlogo-n-text-wrapper{float:left;width:400px;}
-.jheader .jutility-n-main-navigation-wrapper{float:right;}
-.jheader .jutility-n-main-navigation-wrapper .jutility{float:right;margin-top:10px;}
-.jheader .jutility-n-main-navigation-wrapper .jutility .jleft-curve{float:left;background:url(../images/jutility-left-curve.png) no-repeat;width:9px;height:27px;}
-.jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle{float:left;background:url(../images/jutility-middle.png) repeat-x;height:23px;padding:4px 0 4px 0;}
-.jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle ul li{float:left;padding:0 7px;background:url(../images/jutility-divider.png) no-repeat 100% 50%;}
-.jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle ul li a{color:#FFF;font-size:11px;text-decoration:none;}
-.jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle ul li a:hover{text-decoration:underline;}
-.jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle ul li.last{background:url(../images/jchange-language-dropdown.png) no-repeat right bottom;padding: 0 22px 0 7px;}
-.jheader .jutility-n-main-navigation-wrapper .jutility .jright-curve{float:left;background:url(../images/jutility-right-curve.png) no-repeat;width:9px;height:27px;}
-.jheader .jutility-n-main-navigation-wrapper .jmain-navigation-container{clear:both;padding-top:25px;width:550px;float:right;text-align:right;background:url(../images/jmenu-bottom-line.png) no-repeat right bottom;}
+body
+{
+	background: url(../images/jbody-bg.png) repeat-x #cdef53;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	color: #3a5d00;
+}
+.jwrapper
+{
+	width: 980px;
+	margin: 0 auto;
+	background: url(../images/jlight-spots.png) no-repeat;
+}
+.jheader
+{
+	width: 980px;
+	height: 95px;
+	overflow: hidden;
+}
+.jheader .jlogo
+{
+	float: left;
+	padding: 32px 0 0 0;
+	width: 232px;
+	height: 62px;
+}
+.jheader .jlogo-text
+{
+	font-weight: bold;
+	color: #000;
+	padding: 82px 0 0px 13px;
+	height: 0px;
+	background: url(../images/indian-flag.png) no-repeat right;
+}
+.jheader .jlogo-n-text-wrapper
+{
+	float: left;
+	width: 400px;
+}
+.jheader .jutility-n-main-navigation-wrapper
+{
+	float: right;
+}
+.jheader .jutility-n-main-navigation-wrapper .jutility
+{
+	float: right;
+	margin-top: 10px;
+}
+.jheader .jutility-n-main-navigation-wrapper .jutility .jleft-curve
+{
+	float: left;
+	background: url(../images/jutility-left-curve.png) no-repeat;
+	width: 9px;
+	height: 27px;
+}
+.jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle
+{
+	float: left;
+	background: url(../images/jutility-middle.png) repeat-x;
+	height: 23px;
+	padding: 4px 0 4px 0;
+}
+.jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle ul li
+{
+	float: left;
+	padding: 0 7px;
+	background: url(../images/jutility-divider.png) no-repeat 100% 50%;
+}
+.jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle ul li a
+{
+	color: #FFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+.jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle ul li a:hover
+{
+	text-decoration: underline;
+}
+.jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle ul li.last
+{
+	/* background: url(../images/jchange-language-dropdown.png) no-repeat right bottom; */
+	padding: 0 10px 0 7px;
+}
+.jheader .jutility-n-main-navigation-wrapper .jutility .jright-curve
+{
+	float: left;
+	background: url(../images/jutility-right-curve.png) no-repeat;
+	width: 9px;
+	height: 27px;
+}
+.jheader .jutility-n-main-navigation-wrapper .jmain-navigation-container
+{
+	clear: both;
+	padding-top: 25px;
+	width: 550px;
+	float: right;
+	text-align: right;
+	background: url(../images/jmenu-bottom-line.png) no-repeat right bottom;
+}
 /* Global navigation starts */
-#global_navigation{}
-#global_navigation ul{list-style: none; padding: 0; margin: 0; display:block; overflow:hidden; float:right;}
-#global_navigation li{float: left;margin:0 1px;}
-#global_navigation ul li a{color: #FFFFFF; font-family :Arial; font-weight:bold; font-size:12px; background:  url(../images/jnav_tab_left_normal.gif) left top no-repeat; text-decoration: none;padding-left: 12px}
-#global_navigation ul li a span {background: url(../images/jnav_tab_right_normal.gif) right top no-repeat; padding: 9px 12px 8px 0;}
-#global_navigation ul li.current a{background: url(../images/jnav_tab_left.gif) left top no-repeat; padding-left: 12px; color:#000000;}
-#global_navigation ul li.current a span {background: url(../images/jnav_tab_right.gif) right top no-repeat; padding-right: 12px;}
-#global_navigation a, #global_navigation a span{display: block;float: left}
-#global_navigation a:hover {background: url(../images/jnav_tab_left.gif) left top no-repeat; padding-left: 12px; color:#000000;}
-#global_navigation a:hover span{background: url(../images/jnav_tab_right.gif) right top no-repeat; padding-right: 12px}
+#global_navigation
+{
+}
+#global_navigation ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	overflow: hidden;
+	float: right;
+}
+#global_navigation li
+{
+	float: left;
+	margin: 0 1px;
+}
+#global_navigation ul li a
+{
+	color: #FFFFFF;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
+	background: url(../images/jnav_tab_left_normal.gif) left top no-repeat;
+	text-decoration: none;
+	padding-left: 12px;
+}
+#global_navigation ul li a span
+{
+	background: url(../images/jnav_tab_right_normal.gif) right top no-repeat;
+	padding: 9px 12px 8px 0;
+}
+#global_navigation ul li.current a
+{
+	background: url(../images/jnav_tab_left.gif) left top no-repeat;
+	padding-left: 12px;
+	color: #000000;
+}
+#global_navigation ul li.current a span
+{
+	background: url(../images/jnav_tab_right.gif) right top no-repeat;
+	padding-right: 12px;
+}
+#global_navigation a, #global_navigation a span
+{
+	display: block;
+	float: left;
+}
+#global_navigation a:hover
+{
+	background: url(../images/jnav_tab_left.gif) left top no-repeat;
+	padding-left: 12px;
+	color: #000000;
+}
+#global_navigation a:hover span
+{
+	background: url(../images/jnav_tab_right.gif) right top no-repeat;
+	padding-right: 12px;
+}
 /* Hide from IE5-Mac \*/
-#global_navigation a, #global_navigation a span{float: none}
+#global_navigation a, #global_navigation a span
+{
+	float: none;
+}
 /* End hide */
 /*global navigation ends*/
-.jcontent-area{width:980px;clear:both;padding:7px 0 0 0;overflow:hidden;}
-.jcontent-area .jleft-column{float:left;width:668px;}
-.jcontent-area .jleft-column .jbanner{width:601px;height:233px;padding:31px 27px 63px 37px;background:url(../images/jbannerbg.png) no-repeat 0 0; overflow:hidden;}
-.jcontent-area .jleft-column .jbanner .imageplaceholder{height:232px;}
-.jcontent-area .jleft-column .jbanner .jimagedescription{padding:12px 0 0 0;color:#696969;font-size:13px;font-style:normal;float:left;}
-.jcontent-area .jleft-column .jbanner .jswitching-buttons{float:right;padding:12px 0 0 0;}
-.jcontent-area .jleft-column .jbanner .jswitching-buttons a{float:left;	background:url(../images/jswitch-bg-normal.png) no-repeat;height:19px;width:19px;margin-right:4px;text-align:center;text-decoration:none;font-size:11px;color:#1c1e19;padding:4px 0 0 0;}
-.jcontent-area .jleft-column .jbanner .jswitching-buttons a.selected{background:url(../images/jswitch-bg-selected.png) no-repeat;}
-.jcontent-area .jleft-column .jtext-area{width:620px;padding:16px 15px 12px 32px;}
-h1{color:#000;font-weight:bold;font-size:22px;border-bottom:1px solid #000000;padding:0 0 0 0;}
-h2{color:#000;font-weight:bold;font-size:14px;border-bottom:1px solid #000000;padding:20px 0 0 0;}
-h3{color:#000;font-weight:bold;font-size:12px;border-bottom:1px solid #000000;padding:0px 0 3px 0;}
-p{padding:8px 0;line-height:22px;}
-.jread-more{float:right;}
-.jcontent-area .jrcolwrapper{width:285px;min-height:447px;float:right;background:url(../images/jright-menu-drop-shadow.png) no-repeat 0px 0px;padding:18px 0 0 25px;display:inline-block;}
-.jcontent-area  .jrcolwrapper .jsecondary-menu-container{width:260px; min-height:447px;background:url(../images/jtrasparent-image.png) repeat-y;display:inline;}
-.jbox-model-fix{padding:2px 22px 22px 22px;	border:1px solid #a2b55b;}
-.jhelp-text{font-size:11px;}
-.jhelp-button{text-align:center;padding:20px 0 0 0;}
-.jcontent-area  .jrcolwrapper .jsecondary-menu-container ul {margin:5px 20px 0px 20px;}
-.jcontent-area  .jrcolwrapper .jsecondary-menu-container ul li{line-height:20px;}
-.jcontent-area  .jrcolwrapper .jsecondary-menu-container ul li a{text-decoration:none;color:#4a7600;font-size:11px;}
-.jcontent-area  .jrcolwrapper .jsecondary-menu-container ul li a:hover, .jcontent-area  .jrcolwrapper .jsecondary-menu-container ul li a.curent {color:#000;font-weight:bold;}
-.jfooter-spacer{height:10px;clear:both;}
-.jfooter{clear:both;border-top:1px solid #478c28;}
-.jfooter .jfooter-links{float:left;font-size:11px;}
-.jfooter .jfooter-links ul{float:left;margin:5px 35px 0 0;}
-.jfooter .jfooter-links ul li{line-height:16px;}
-.jfooter .jfooter-links ul li a{text-decoration:none;color:#206401;}
-.jfooter .jfooter-links ul li a:hover{text-decoration:underline;}
-.jfooter .jcopy-right{float:right;padding:5px 0 0 0;font-size:11px;color:#206401;}
+.jcontent-area
+{
+	width: 980px;
+	clear: both;
+	padding: 7px 0 0 0;
+	overflow: hidden;
+}
+.jcontent-area .jleft-column
+{
+	float: left;
+	width: 668px;
+}
+.jcontent-area .jleft-column .jbanner
+{
+	width: 601px;
+	height: 233px;
+	padding: 31px 27px 63px 37px;
+	background: url(../images/jbannerbg.png) no-repeat 0 0;
+	overflow: hidden;
+}
+.jcontent-area .jleft-column .jbanner .imageplaceholder
+{
+	height: 232px;
+}
+.jcontent-area .jleft-column .jbanner .jimagedescription
+{
+	padding: 12px 0 0 0;
+	color: #696969;
+	font-size: 13px;
+	font-style: normal;
+	float: left;
+}
+.jcontent-area .jleft-column .jbanner .jswitching-buttons
+{
+	float: right;
+	padding: 12px 0 0 0;
+}
+.jcontent-area .jleft-column .jbanner .jswitching-buttons a
+{
+	float: left;
+	background: url(../images/jswitch-bg-normal.png) no-repeat;
+	height: 19px;
+	width: 19px;
+	margin-right: 4px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 11px;
+	color: #1c1e19;
+	padding: 4px 0 0 0;
+}
+.jcontent-area .jleft-column .jbanner .jswitching-buttons a.selected
+{
+	background: url(../images/jswitch-bg-selected.png) no-repeat;
+}
+.jcontent-area .jleft-column .jtext-area
+{
+	width: 620px;
+	padding: 16px 15px 12px 32px;
+}
+h1
+{
+	color: #000;
+	font-weight: bold;
+	font-size: 22px;
+	border-bottom: 1px solid #000000;
+	padding: 0 0 0 0;
+}
+h2
+{
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+	border-bottom: 1px solid #000000;
+	padding: 20px 0 0 0;
+}
+h3
+{
+	color: #000;
+	font-weight: bold;
+	font-size: 12px;
+	border-bottom: 1px solid #000000;
+	padding: 0px 0 3px 0;
+}
+p
+{
+	padding: 8px 0;
+	line-height: 22px;
+}
+.jread-more
+{
+	float: right;
+}
+.jcontent-area .jrcolwrapper
+{
+	width: 285px;
+	min-height: 447px;
+	float: right;
+	background: url(../images/jright-menu-drop-shadow.png) no-repeat 0px 0px;
+	padding: 18px 0 0 25px;
+	display: inline-block;
+}
+.jcontent-area .jrcolwrapper .jsecondary-menu-container
+{
+	width: 260px;
+	min-height: 447px;
+	background: url(../images/jtrasparent-image.png) repeat-y;
+	display: inline;
+}
+.jbox-model-fix
+{
+	padding: 2px 22px 22px 22px;
+	border: 1px solid #a2b55b;
+}
+.jhelp-text
+{
+	font-size: 11px;
+}
+.jhelp-button
+{
+	text-align: center;
+	padding: 20px 0 0 0;
+}
+.jcontent-area .jrcolwrapper .jsecondary-menu-container ul
+{
+	margin: 5px 20px 0px 20px;
+}
+.jcontent-area .jrcolwrapper .jsecondary-menu-container ul li
+{
+	line-height: 20px;
+}
+.jcontent-area .jrcolwrapper .jsecondary-menu-container ul li a
+{
+	text-decoration: none;
+	color: #4a7600;
+	font-size: 11px;
+}
+.jcontent-area .jrcolwrapper .jsecondary-menu-container ul li a:hover, .jcontent-area .jrcolwrapper .jsecondary-menu-container ul li a.curent
+{
+	color: #000;
+	font-weight: bold;
+}
+.jfooter-spacer
+{
+	height: 10px;
+	clear: both;
+}
+.jfooter
+{
+	clear: both;
+	border-top: 1px solid #478c28;
+}
+.jfooter .jfooter-links
+{
+	float: left;
+	font-size: 11px;
+}
+.jfooter .jfooter-links ul
+{
+	float: left;
+	margin: 5px 35px 0 0;
+}
+.jfooter .jfooter-links ul li
+{
+	line-height: 16px;
+}
+.jfooter .jfooter-links ul li a
+{
+	text-decoration: none;
+	color: #206401;
+}
+.jfooter .jfooter-links ul li a:hover
+{
+	text-decoration: underline;
+}
+.jfooter .jcopy-right
+{
+	float: right;
+	padding: 5px 0 0 0;
+	font-size: 11px;
+	color: #206401;
+}
 /* Inner pages */
-.jinner-banner-container{background:url(../images/jinner-banner-bg.png) no-repeat right;;width:955px;height:109px;margin:0 auto;padding:10px;}
-.jclear{clear:both;}
-.jinner-content{width:620px;padding:20px 0 0 10px;float:left;}
+.jinner-banner-container
+{
+	background: url(../images/jinner-banner-bg.png) no-repeat right; ;width:955px;height:109px;margin:0auto;padding:10px;}
+.jclear
+{
+	clear: both;
+}
+.jinner-content
+{
+	width: 620px;
+	padding: 20px 0 0 10px;
+	float: left;
+}
 /*form elements starts*/
-input, textarea {width:270px; font-family:Arial, Helvetica, sans-serif; font-size:12px; border:1px solid #9AB188; padding:2px;}
-.but{width:60px; background:#E3EBDE;}
-.jsmall-text{font-size:10px;font-style:italic;}
+input, textarea
+{
+	width: 270px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border: 1px solid #9AB188;
+	padding: 2px;
+}
+.but
+{
+	width: 60px;
+	background: #E3EBDE;
+}
+.jsmall-text
+{
+	font-size: 10px;
+	font-style: italic;
+}
 /*form elements ends*/
 

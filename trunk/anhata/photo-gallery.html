@@ -1,7 +1,8 @@
-<html>
-  <head>
-    <title>Untitled Page</title>
-    <link href="css/jstyle.css" type="text/css" rel="stylesheet"/>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Foto-Galerie - Anahata</title>
+    <link href="css/jstyle.css" type="text/css" rel="stylesheet" />
+
     <script type="text/javascript">
       var MaxNumOfPhotos = 30;
       var CurrentPhotoCounter = 1;
@@ -37,84 +38,137 @@
       }
     </script>
 
-  </head>
-  <body>
-   	<div class="jheader">
-    	<div class="jlogo-n-text-wrapper">
-        <div class="jlogo">
-      		<img src="images/anhata-logo.png" width="232" height="63" alt="anhata - A Project To Help In INDIA " />
-      	</div>
-        <div class="jlogo-text">
-        	A Project To Help In INDIA
-        	
-        </div>
-        </div>
-                
-        <div class="jutility-n-main-navigation-wrapper">
-        <div class="jutility">
-        	<div class="jleft-curve"></div>
-            <div class="jmiddle">
-            	<ul>
-                	<li><a href="#">Sitemap</a></li>
-                    <li class="last"><a href="#">English Version</a></li>
-                </ul>
+</head>
+<body>
+    <div class="jwrapper">
+        <div class="jheader">
+            <div class="jlogo-n-text-wrapper">
+                <div class="jlogo">
+                    <img src="images/anhata-logo.png" width="232" height="63" alt="anhata - A Project To Help In INDIA " />
+                </div>
+                <div class="jlogo-text">
+                    Ein Projekt, in INDIEN Zu helfen
+                </div>
             </div>
-            <div class="jright-curve"></div>
+            <div class="jutility-n-main-navigation-wrapper">
+                <div class="jutility">
+                    <div class="jleft-curve">
+                    </div>
+                    <div class="jmiddle">
+                        <ul>
+                            <li><a href="sitemap.html">Seite-Karte</a></li>
+                            <li class="last"><a href="e_photo-gallery.html">English Version</a></li>
+                        </ul>
+                    </div>
+                    <div class="jright-curve">
+                    </div>
+                </div>
+                <div class="jmain-navigation-container" id="global_navigation">
+                    <ul>
+                        <li id="allAboutUs"><a href="index.html"><span>Wir über uns</span></a></li>
+                        <li id="saiMaaServices"><a href="sai-maa-services.html"><span>Sai Maa Dienstleistungen</span></a></li>
+                        <li id="photoGallery"><a href="photo-gallery.html"><span>Foto-Galerie</span></a></li>
+                        <li id="videos"><a href="videos.html"><span>Videos</span></a></li>
+                        <li id="contactUs"><a href="contact-us.html"><span>Kontakt</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                var e = document.getElementById("photoGallery");
+                e.setAttribute("class", "current");
+                e.setAttribute("className", "current"); 
+            </script>
+
         </div>
-        <div class="jmain-navigation-container" id="global_navigation">
-        	<ul>
-            	<li class="current"><a href="#"><span>All About Us</span></a></li>
-                <li><a href="#"><span>Sai Maa Services</span></a></li>
-                <li id="photoGallery"><a href="photoGallery.htm"><span>Photo Gallery</span></a></li>
-                <li><a href="#"><span>Videos</span></a></li>
-                <li><a href="#"><span>Contact Us</span></a></li>
-            </ul>        	
-        </div>
-        </div>
-    </div>
-    <script type="text/javascript">
+
+        <script type="text/javascript">
       var e = document.getElementById("photoGallery");
-      debugger;
       e.setAttribute("class", "current");
       e.setAttribute("className", "current"); // for IE which does not recognize "class"
-     
+        </script>
 
-    </script>
-    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-      <tbody>
-        <tr bordercolor="#666666" align="center" valign="middle">
-          <td colspan="3" height="350">
-            <img src="PhotoGallery_files/6.jpg" alt="Gallery" id="img_Gallery" border="0"></td>
-        </tr>
-        <tr valign="middle">
-          <td class="size11" align="right" height="20" width="20%">
-            &nbsp;<strong>
-              <span id="ImagePrevious">
-                <a href="javascript:ChangeImg('5')">
-                  &lt;&lt;
-                  Previous
-                </a>
-              </span>
-            </strong>
-          </td>
-          <td class="size11" align="center" height="20" width="65%">
-            <strong>
-              <span id="ImageCounter">Image 6 of 30</span>
-            </strong>
-          </td>
-          <td class="size11" align="left" height="20" width="20%">
-            &nbsp;<strong>
-              <span id="ImageNext">
-                <a href="javascript:ChangeImg('7')">Next&gt;&gt;</a>
-              </span>
-            </strong>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <br />
+        <div class="jcontent-area">
+            <div class="jleft-column">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                    <tr bordercolor="#666666" align="center" valign="middle">
+                        <td colspan="3" height="350">
+                            <img src="PhotoGallery_files/6.jpg" alt="Gallery" id="img_Gallery" border="0"></td>
+                    </tr>
+                    <tr valign="middle">
+                        <td class="size11" align="right" height="20" width="20%">
+                            &nbsp;<strong> <span id="ImagePrevious"><a href="javascript:ChangeImg('5')">&lt;&lt;
+                                Previous </a></span></strong>
+                        </td>
+                        <td class="size11" align="center" height="20" width="65%">
+                            <strong><span id="ImageCounter">Image 6 of 30</span> </strong>
+                        </td>
+                        <td class="size11" align="left" height="20" width="20%">
+                            &nbsp;<strong> <span id="ImageNext"><a href="javascript:ChangeImg('7')">Next&gt;&gt;</a>
+                            </span></strong>
+                        </td>
+                    </tr>
+                </table>
+                <br />
 
-      <script language="JavaScript">DisplayPhoto();</script>
+                <script language="JavaScript" type="text/javascript">DisplayPhoto();</script>
 
-    </body>
+            </div>
+            <div class="jrcolwrapper">
+                <div class="jsecondary-menu-container">
+                    <div class="jbox-model-fix">
+                        <h2>
+                            Schnelle Verbindungen</h2>
+                        <ul>
+                            <li><a href="map.html">Karte</a></li>
+                            <li><a href="woman-empowerment.html">Frau-Bevollmächtigung</a></li>
+                            <li><a href="organic-farming.html">Bio-Bauernhof</a></li>
+                            <li><a href="keep-clean.html">Halten Sie Sauber - Machen Grün</a></li>
+                        </ul>
+                        <h2>
+                            Nachrichten</h2>
+                        <ul>
+                            <li><a href="#">Blood donation camp on...01/08/10</a></li>
+                            <li><a href="#">Social service... 01/12/10</a></li>
+                            <li><a href="#">Tree plantation camp...01/22/10</a></li>
+                            <li><a href="#">Keep Green - Make Clean.. 01/29/10</a></li>
+                        </ul>
+                        <h2>
+                            Helfen Sie Uns</h2>
+                        <ul>
+                            <li class="jhelp-text">Der Verein ist beim Finanzamt als gemeinnützig anerkannt und
+                                stellt Spendenbescheinigungen aus. Sie können auch einzelne Projekte fördern. </li>
+                        </ul>
+                        <div class="jhelp-button">
+                            <a href="#">
+                                <img src="images/jdonate-link.png" width="200" height="75" alt="Help Us To Help..."
+                                    title="Help Us To Help..." /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jfooter-spacer">
+        </div>
+     <div class="jfooter">
+            <div class="jfooter-links">
+                <ul>
+                    <li><a href="all-about-us.html">Wir über uns</a></li>
+                    <li><a href="sai-maa-services.html">alle Rechte vorbehalten</a></li>
+                </ul>
+                <ul>
+                    <li><a href="photo-gallery.html">Foto-Galerie</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+                <ul>
+                    <li><a href="contact-us.html">Kontakt</a></li>
+                    <li><a href="sitemap.html">Seite-Karte</a></li>
+                </ul>
+            </div>
+            <div class="jcopy-right">
+                anahata &copy; alle Rechte vorbehalten.
+            </div>
+        </div>
+    </div>
+</body>
 </html>
