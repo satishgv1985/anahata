@@ -43,10 +43,12 @@ del
 {
 	text-decoration: line-through;
 }
-img, div
+img,div
 {
-	behavior: url(Scripts/iepngfix.htc);
+	 behavior: url(Scripts/iepngfix.htc);
+	
 }
+
 /* page specific styles starts here */
 body
 {
