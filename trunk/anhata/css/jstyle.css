@@ -129,8 +129,8 @@ body
 }
 .jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle ul li.last
 {
-	/* background: url(../images/jchange-language-dropdown.png) no-repeat right bottom; */
-	padding: 0 10px 0 7px;
+	background: url(../images/jchange-language-dropdown.png) no-repeat right bottom;
+	padding: 0 22px 0 7px;
 }
 .jheader .jutility-n-main-navigation-wrapper .jutility .jright-curve
 {
@@ -181,6 +181,7 @@ body
 	background: url(../images/jnav_tab_right_normal.gif) right top no-repeat;
 	padding: 9px 12px 8px 0;
 }
+
 #global_navigation ul li.current a
 {
 	background: url(../images/jnav_tab_left.gif) left top no-repeat;
@@ -192,6 +193,56 @@ body
 	background: url(../images/jnav_tab_right.gif) right top no-repeat;
 	padding-right: 12px;
 }
+
+#global_navigation ul li.long a
+{
+	background: url(../images/jnav_tab_left_normallong.gif) left top no-repeat;
+	padding-left: 12px;
+	color: #FFFFFF;
+}
+#global_navigation ul li.long a span
+{
+	background: url(../images/jnav_tab_right_normallong.gif) right top no-repeat;
+	padding-right: 12px;
+}
+
+#global_navigation ul li.long a:hover
+{
+	background: url(../images/jnav_tab_leftlong.gif) left top no-repeat;
+	padding-left: 12px;
+	color: #000000;
+}
+#global_navigation ul li.long a:hover span
+{
+	background: url(../images/jnav_tab_rightlong.gif) right top no-repeat;
+	padding-right: 12px;
+}
+
+#global_navigation ul li.long_current a
+{
+	background: url(../images/jnav_tab_leftlong.gif) left top no-repeat;
+	padding-left: 12px;
+	color: #000000;
+}
+#global_navigation ul li.long_current a span
+{
+	background: url(../images/jnav_tab_rightlong.gif) right top no-repeat;
+	padding-right: 12px;
+}
+
+#global_navigation ul li.long_current a:hover
+{
+	background: url(../images/jnav_tab_leftlong.gif) left top no-repeat;
+	padding-left: 12px;
+	color: #000000;
+}
+#global_navigation ul li.long_current a:hover span
+{
+	background: url(../images/jnav_tab_rightlong.gif) right top no-repeat;
+	padding-right: 12px;
+}
+
+
 #global_navigation a, #global_navigation a span
 {
 	display: block;

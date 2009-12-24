@@ -1,43 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Photo Gallery - Anahata</title>
-    <link href="css/jstyle.css" type="text/css" rel="stylesheet" />
-
-  <script type="text/javascript">
-      var MaxNumOfPhotos = 30;
-      var CurrentPhotoCounter = 1;
-      var PhotoDIRPath = "galleryImages/";
-
-      function ChangeImg(currentImageNum)
-      {
-      CurrentPhotoCounter = currentImageNum;
-      DisplayPhoto();
-      }
-
-      function DisplayPhoto()
-      {
-      document.images["img_Gallery"].src = PhotoDIRPath + CurrentPhotoCounter + ".jpg";
-      var PrvImage = parseInt(CurrentPhotoCounter)-1;
-      var NextImage = parseInt(CurrentPhotoCounter)+1;
-
-      document.getElementById("ImageCounter").innerHTML = 'Image ' + CurrentPhotoCounter + ' of ' + MaxNumOfPhotos;
-
-      //do not display the next link
-      if (parseInt(MaxNumOfPhotos)==parseInt(CurrentPhotoCounter))
-      document.getElementById("ImageNext").innerHTML = '';
-      else
-      document.getElementById("ImageNext").innerHTML = '<a href="javaScript:ChangeImg(\'' + NextImage + '\')"><IMG SRC="images/right-arrow.png" /></a>';
-
-      //do not display the prev link
-      if (parseInt(1)==parseInt(CurrentPhotoCounter))
-      document.getElementById("ImagePrevious").innerHTML  = '';
-      else
-      document.getElementById("ImagePrevious").innerHTML = '<a href="javaScript:ChangeImg(\'' + PrvImage + '\')"><IMG SRC="images/left-arrow.png" /></a>';
-
-
-      }
-    </script>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>All About Us - Anahata</title>
+    <link rel="stylesheet" type="text/css" href="css/jstyle.css" />
 </head>
 <body>
     <div class="jwrapper">
@@ -57,7 +22,7 @@
                     <div class="jmiddle">
                         <ul>
                             <li><a href="sitemap.html">Sitemap</a></li>
-                            <li class="last"><a href="photo-gallery.html">Deutsche Version</a></li>
+                            <li class="last"><a href="all-about-us.html">Deutsche Version</a></li>
                         </ul>
                     </div>
                     <div class="jright-curve">
@@ -66,7 +31,8 @@
                 <div class="jmain-navigation-container" id="global_navigation">
                     <ul>
                         <li id="allAboutUs"><a href="e_index.html"><span>All About Us</span></a></li>
-                        <li id="saiMaaServices" class="long"><a href="e_sai-maa-services.html"><span>Sai Maa Services</span></a></li>
+                        <li id="saiMaaServices" class="long"><a href="e_sai-maa-services.html"><span>Sai Maa
+                            Services</span></a></li>
                         <li id="photoGallery"><a href="e_photo-gallery.html"><span>Photo Gallery</span></a></li>
                         <li id="videos"><a href="e_videos.html"><span>&nbsp;Videos&nbsp;</span></a></li>
                         <li id="contactUs"><a href="e_contact-us.html"><span>Contact Us</span></a></li>
@@ -75,54 +41,60 @@
             </div>
 
             <script type="text/javascript">
-                var e = document.getElementById("photoGallery");
+                var e = document.getElementById("allAboutUs");
                 e.setAttribute("class", "current");
                 e.setAttribute("className", "current"); 
             </script>
 
         </div>
-
-        <script type="text/javascript">
-      var e = document.getElementById("photoGallery");
-      e.setAttribute("class", "current");
-      e.setAttribute("className", "current"); // for IE which does not recognize "class"
-        </script>
-
         <div class="jcontent-area">
-          <div class="jleft-column" style="padding-top: 10px;">
+            <div class="jleft-column">
                 <div class="jtext-area">
-                    <h1>
-                        Photo Gallery
-                    </h1>
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="padding-top: 15px;">
-                        <tr bordercolor="#666666" align="center" valign="middle">
-                            <td colspan="3" height="300">
-                                <img src="PhotoGallery_files/6.jpg" alt="Gallery" id="img_Gallery" border="0" /></td>
-                        </tr>
-                        <tr valign="middle">
-                            <td class="size11" align="right" height="20" width="10%">
-                                &nbsp;<strong> <span id="ImagePrevious"><a href="javascript:ChangeImg('5')">&lt;&lt;
-                                    Previous </a></span></strong>
-                            </td>
-                            <td class="size11" align="center" height="20" width="80%">
-                                <strong><span id="ImageCounter">Image 6 of 30</span> </strong>
-                            </td>
-                            <td class="size11" align="left" height="20" width="10%">
-                                &nbsp;<strong> <span id="ImageNext"><a href="javascript:ChangeImg('7')">Next&gt;&gt;<img
-                                    src="images/right-arrow.png" /></a> </span></strong>
-                            </td>
-                        </tr>
-                    </table>
-                    <br />
-
-                    <script language="JavaScript" type="text/javascript">DisplayPhoto();</script>
-
+                    <h2>
+                        All About Us</h2>
+                    <p>
+                        Every human being has 7 chakras. In Sanskrit the heart chakra is called "Anahata"
+                        This chakra is the centre of cosmic love.</p>
+                    <p>
+                        At the same time it is the balancing centre of the lower chakras (body centred chakras)
+                        and the upper chakras (spiritual centred chakras). Often it is called the tip of
+                        the scale. It is the compensatory centre. Human beings with an open heart chakra
+                        as their focal point live in a balanced harmony, with love towards all that comes
+                        up.</p>
+                    <p>
+                        The energies of the heart are love and pain. On that level it is necessary to be
+                        conscious for own actions and also to become deeply sensitive in expressing feelings
+                        and thoughts when talking to other souls.</p>
+                    <p>
+                        Anahata, the heart chakra, refers to the element air. Its colour is a soft bright
+                        green and a tender rose colour.</p>
+                    <p>
+                        In our work for the people in Puttaparthi we would like to give a balancing reflection
+                        of the heart and this means that we help with all our love. Our engagement for children
+                        and old people will reflect in the generations with loving and caring actions in
+                        the future also. Also in India the classical structures of large families are disappearing
+                        more and more. This is the reason why we find much more old people and homeless
+                        old people nowadays as a result of this change. In building a home for the old aged
+                        people we want to give them a chance for a honourable end of their lifetime.</p>
+                    <p>
+                        Children are the future and children with a good education are a capital and support
+                        for the future. In supporting schools, taking care that most of the children have
+                        a birth-certificate (which is a necessity for further or higher education), we pay
+                        for teachers, etc. We help, so that more children in rural districts can achieve
+                        a school degree, in order to get a place for college and university studies also.</p>
+                    <p>
+                        An important aspect of our work is the "help yourself aspect" for the people. The
+                        Organic Farm delivers vegetables and milk for the home for the aged and food for
+                        the poor people from our own sources.</p>
+                    <p>
+                        The Tailoring School helps girls and women to learn sewing, so that they get into
+                        the position to earn their own money to help their own family.</p>
                 </div>
             </div>
             <div class="jrcolwrapper">
                 <div class="jsecondary-menu-container">
                     <div class="jbox-model-fix">
-                       <h2>
+                        <h2>
                             Quick Links</h2>
                         <ul>
                             <li><a href="e_map.html">Map</a></li>
@@ -132,7 +104,7 @@
                         </ul>
                         <h2>
                             News</h2>
-                        <ul>
+                       <ul>
                             <li><a href="e_news_website_release.html">New Updated Website Released on...21/12/2009</a></li>
                             <li><a href="e_news_micro_finance_shg.html">Micro Finance SHG on...01/12/2009</a></li>
                         </ul>
@@ -144,9 +116,8 @@
                                 also be supported.</li>
                         </ul>
                         <div class="jhelp-button">
-                           <a href="e_donate.html">
-                                <img src="images/jdonate-link.png" width="200" height="75" alt="Donate"
-                                    title="Donate" /></a>
+                            <a href="e_donate.html">
+                                <img src="images/jdonate-link.png" width="200" height="75" alt="Donate" title="Donate" /></a>
                         </div>
                     </div>
                 </div>
@@ -154,7 +125,7 @@
         </div>
         <div class="jfooter-spacer">
         </div>
-    <div class="jfooter">
+        <div class="jfooter">
             <div class="jfooter-links">
                 <ul>
                     <li><a href="all-about-us.html">All About Us</a></li>
