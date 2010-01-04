@@ -403,7 +403,8 @@ p
 .jcontent-area .jrcolwrapper .jsecondary-menu-container ul li a:hover, .jcontent-area .jrcolwrapper .jsecondary-menu-container ul li a.curent
 {
 	color: #000;
-	font-weight: bold;
+	font-weight: normal;
+	text-decoration: underline;
 }
 .jfooter-spacer
 {
