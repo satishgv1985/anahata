@@ -127,8 +127,9 @@ body
 }
 .jheader .jutility-n-main-navigation-wrapper .jutility .jmiddle ul li.last
 {
-	background: url(../images/jchange-language-dropdown.png) no-repeat right bottom;
-	padding: 0 22px 0 7px;
+/*	background: url(../images/jchange-language-dropdown.png) no-repeat right bottom; */
+	background-image:none;
+	padding: 0 7px 0 7px;
 }
 .jheader .jutility-n-main-navigation-wrapper .jutility .jright-curve
 {
