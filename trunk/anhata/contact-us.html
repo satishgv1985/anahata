@@ -4,10 +4,85 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Kontakt - Anahata</title>
     <link rel="stylesheet" type="text/css" href="css/jstyle.css" />
+
+    <script language="Javascript" type="text/javascript">
+function echeck(str) {
+
+		var at="@"
+		var dot="."
+		var lat=str.indexOf(at)
+		var lstr=str.length
+		var ldot=str.indexOf(dot)
+		if (str.indexOf(at)==-1){
+		   alert("Invalid E-mail ID")
+		   return false
+		}
+
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+		   alert("Invalid E-mail ID")
+		   return false
+		}
+
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+		    alert("Invalid E-mail ID")
+		    return false
+		}
+
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+		
+		 if (str.indexOf(" ")!=-1){
+		    alert("Invalid E-mail ID")
+		    return false
+		 }
+
+ 		 return true					
+	}
+
+function ValidateForm(){
+    
+    var visitorname=document.emailpro.visitorname
+	if ((visitorname.value==null)||(visitorname.value=="")){
+		alert("Enter Name")
+		visitorname.focus()
+		return false
+	}
+	
+	var emailID=document.emailpro.visitormail
+	
+	if ((emailID.value==null)||(emailID.value=="")){
+		alert("Enter Email")
+		emailID.focus()
+		return false
+	}
+	if (echeck(emailID.value)==false){
+		emailID.value=""
+		emailID.focus()
+		return false
+	}
+	
+	
+	
+	return true
+ }
+    </script>
+
 </head>
 <body>
     <div class="jwrapper">
-         <div class="jheader">
+        <div class="jheader">
             <div class="jlogo-n-text-wrapper">
                 <div class="jlogo">
                     <img src="images/anhata-logo.png" width="232" height="63" alt="anhata - A Project To Help In INDIA " />
@@ -23,7 +98,8 @@
                     <div class="jmiddle">
                         <ul>
                             <li><a href="sitemap.html">Seite-Karte</a></li>
-                            <li><a href="e_contact-us.html">English Version</a></li><li class="last"><a href="#">French Version</a></li>
+                            <li><a href="e_contact-us.html">English Version</a></li><li class="last"><a href="#">
+                                French Version</a></li>
                         </ul>
                     </div>
                     <div class="jright-curve">
@@ -48,78 +124,132 @@
 
         </div>
         <div class="jcontent-area">
-            <!--<div class="jinner-banner-container">
-                <img src="images/jinner-banner01.png" width="930" height="104" alt="Let Us keep them ready..." />
-            </div>-->
             <div class="jclear">
             </div>
             <div class="jinner-content">
                 <h1>
                     Kontakt, Impressum</h1>
-                <table cellspacing="8">
-                    <tr>
-                        <td>
-                            Monika Müller</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Siegenburgerstrasse 31</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            D - 81373 München</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Telefon: +49 (0) 89 / 769 83 03</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Telefax: +49 (0) 89 / 769 83 97</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            E-Mail: <a class="link1" href="mailto:monika.mueller.indienhilfe@anahata-ev.de">monika.mueller.indienhilfe@anahata-ev.de</a></td>
-                    </tr>
-                    <tr>
-                        <td height="10">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>Vertretungsberechtigte für den Verein:</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Monika Müller
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Gudula Blau
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="10">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>Sitz des Vereins: München</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Registergericht Amtsgericht München
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Vereinsregister VR 18,181
-                        </td>
-                    </tr>
-                </table>
+                <form method="post" name="emailpro" action="sendmail.php" onsubmit="return ValidateForm();">
+                    <table cellspacing="8" width="100%">
+                        <tr>
+                            <td colspan="2">
+                                Monika Müller</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Siegenburgerstrasse 31</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                D - 81373 München</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Telefon: +49 (0) 89 / 769 83 03</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Telefax: +49 (0) 89 / 769 83 97</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h2 class="none">
+                                    Mitgliedsantrag
+                                </h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Die Arbeit des Vereins will ich unterstützen als</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" nowrap="nowrap">
+                                <input type="checkbox" name="donation" value="Zahlendes Mitglied" />Zahlendes Mitglied</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div width="100%" style="clear: both;">
+                                    <input type="checkbox" name="service" value="Zupackendes Mitglied. Ich biete folgende Leistung(en) an:" />Zupackendes
+                                    Mitglied. Ich biete folgende Leistung(en) an:
+                                    <input type="text" name="servicetext" size="35" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Name, Vorname:</td>
+                            <td>
+                                <input type="text" name="visitorname" size="35" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Geburtstag:</td>
+                            <td>
+                                <input type="text" name="dob" size="35" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Straße:</td>
+                            <td>
+                                <input type="text" name="street" size="35" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                PLZ, Ort:</td>
+                            <td>
+                                <input type="text" name="place" size="35" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Telefon:</td>
+                            <td>
+                                <input type="text" name="phone" size="35" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Handy:</td>
+                            <td>
+                                <input type="text" name="handy" size="35" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Your E-Mail:</td>
+                            <td>
+                                <input type="text" name="visitormail" size="35" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Send Mail" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Als zahlendes Mitglied bei Anahata e.V. haben Sie zwei Möglichkeiten die Arbeit
+                                    des Vereins zu unterstützen. Zum einen können Sie einen monatlichen Betrag regelmäßig
+                                    überweisen oder eine Einzelspende tätigen. Eine Spendenbescheinigung erhalten Sie
+                                    von uns automatisch nach Jahresabschluss.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Zahlendes Mitglied bei Anahata e.V. sind Sie, wenn die erste Spende auf unserem
+                                    Konto eingegangen ist.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    <b>Spendenkonto von Anahata e.V.</b>
+                                    <br />
+                                    <b>Bank: Postbank München</b><br />
+                                   <b> Konto: 835703806</b><br />
+                                   <b> BLZ: 700 100 80</b>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </div>
             <div class="jrcolwrapper">
                 <div class="jsecondary-menu-container">
@@ -130,7 +260,8 @@
                             <li><a href="map.html">Karte</a></li>
                             <li><a href="woman-empowerment.html">Women Empowerment</a></li>
                             <li><a href="organic-farming.html">Organic Farming</a></li>
-                            <li><a href="keep-clean.html">Keep Clean - Make Green</a></li><li><a href="links.html">Links</a></li>
+                            <li><a href="keep-clean.html">Keep Clean - Make Green</a></li><li><a href="links.html">
+                                Links</a></li>
                         </ul>
                         <h2>
                             Helfen Sie Uns</h2>
@@ -139,7 +270,7 @@
                                 stellt Spendenbescheinigungen aus. Sie können auch einzelne Projekte fördern. </li>
                         </ul>
                         <div class="jhelp-button">
-                             <a href="donate.html">
+                            <a href="donate.html">
                                 <img src="images/jdonate-link-german.png" width="200" height="75" alt="Schenken"
                                     title="Schenken" /></a>
                         </div>
@@ -149,7 +280,7 @@
         </div>
         <div class="jfooter-spacer">
         </div>
-           <div class="jfooter">
+        <div class="jfooter">
             <div class="jfooter-links">
                 <ul>
                     <li><a href="all-about-us.html">Wir über uns</a></li>
