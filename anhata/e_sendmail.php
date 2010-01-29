@@ -195,7 +195,7 @@ From E-Mail: $visitorname ($visitormail)\n
 
                    $from = "From: $visitormail\r\n";
 
-                   $mail_sent =mail("satishgv1985@gmail.com", $subject, $message, $from);
+                   $mail_sent =mail("monika.mueller.indienhilfe@anahata-ev.de", $subject, $message, $from);
                    echo "<span style=\"margin:5px; top:15px; height:30px;\"><b>";
                    echo $mail_sent ? "Mail sent Successfully" : "Mail failed. Please Give Valid Email Id";
                    echo "</b></span>";
