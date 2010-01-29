@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -133,130 +133,75 @@ function ValidateForm(){
             <div class="jinner-content">
                 <h1>
                     Contact Us</h1>
-                <form method="post" name="emailpro" action="e_sendmail.php" onsubmit="return ValidateForm();">
-                    <table cellspacing="8" width="100%">
-                        <tr>
-                            <td colspan="2">
-                                Monika Müller</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                Siegenburgerstrasse 31</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                D - 81373 München</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                Phone: +49 (0) 89 / 769 83 03</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                Fax: +49 (0) 89 / 769 83 97</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                E-mail: <a class="link1" href="mailto:monika.mueller.indienhilfe@anahata-ev.de">monika.mueller.indienhilfe
-                                    @ anahata-ev.de </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <h2 class="none">
-                                    Membership
-                                </h2>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                How can you support society</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" nowrap="nowrap">
-                                <input type="checkbox" name="donation" value="Zahlendes Mitglied" />As per Donation</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <div width="100%" style="clear: both;">
-                                    <input type="checkbox" name="service" value="Zupackendes Mitglied. Ich biete folgende Leistung(en) an:" />I can contribute my service as following:
-                                    <input type="text" name="servicetext" size="35" />
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Name, First name:</td>
-                            <td>
-                                <input type="text" name="visitorname" size="35" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Date of Birth:</td>
-                            <td>
-                                <input type="text" name="dob" size="35" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Street:</td>
-                            <td>
-                                <input type="text" name="street" size="35" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Place, PIN:</td>
-                            <td>
-                                <input type="text" name="place" size="35" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Telefon:</td>
-                            <td>
-                                <input type="text" name="phone" size="35" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Handy:</td>
-                            <td>
-                                <input type="text" name="handy" size="35" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Your E-Mail:</td>
-                            <td>
-                                <input type="text" name="visitormail" size="35" /></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input type="submit" value="Send Mail" /></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <p>
-                                    As paying member u have two opportunities to support the society Eighter u can donate
-                                    on a regularly basis or at one time donation slip we will send automatically after
-                                    the financial year.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <p>
-                                    Paying member you are as soon as you are done first donation.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <p>
-                                    <b>Donation account Number Anahata e.V.</b>
-                                    <br />
-                                    <b>Bank: Postbank München</b><br />
-                                    <b>Konto: 835703806</b><br />
-                                    <b>BLZ: 700 100 80</b>
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                </form>
+                   <?php
+
+                   $todayis = date("l, F j, Y, g:i a") ;
+
+                   
+                   $servicetext = $_POST['servicetext']; 
+                   
+                   $visitorname = $_POST['visitorname']; 
+                   
+                   $dob = $_POST['dob']; 
+
+                   $street = $_POST['street']; 
+                   $place = $_POST['place']; 
+                   $phone = $_POST['phone']; 
+                   $handy = $_POST['handy']; 
+                   
+
+
+
+                   if (eregi('http:', $notes)) {
+                   	die ("Do NOT try that! ! ");
+                   }
+                   if(!$visitormail == "" && (!strstr($visitormail,"@") || !strstr($visitormail,"."))) 
+                   {
+                   	echo "<h2>Use Back - Enter valid e-mail</h2>\n"; 
+                   	$badinput = "<h2>Feedback was NOT submitted</h2>\n";
+                   	echo $badinput;
+                   	die ("Go back! ! ");
+                   }
+
+                   if(empty($visitorname) || empty($visitormail) ) {
+                   	echo "<h2>Use Back - fill in all fields</h2>\n";
+                   	die ("Use back! ! "); 
+                   }
+
+
+
+                   $subject = "Membership"; 
+                   if(isset($_POST['donation']))
+                   {
+                   	$donationtype="As per Donation ";
+                   }
+                   
+                   if(isset($_POST['service']))
+                   {
+                   	$donationtype="I can contribute my service as following: $servicetext";	
+                   }
+
+                   $message = " $todayis [EST] \n
+Name, First Name: $visitorname \n
+How can you support society: $donationtype \n 
+Date of Birth: $dob \n
+Street: $street\n
+Place, PIN: $place\n
+Telefon: $phone\n
+Handy: $handy\n
+From E-Mail: $visitorname ($visitormail)\n
+
+";
+
+                   $from = "From: $visitormail\r\n";
+
+                   $mail_sent =mail("satishgv1985@gmail.com", $subject, $message, $from);
+                   echo "<span style=\"margin:5px; top:15px; height:30px;\"><b>";
+                   echo $mail_sent ? "Mail sent Successfully" : "Mail failed. Please Give Valid Email Id";
+                   echo "</b></span>";
+                   
+
+                   ?>
             </div>
             <div class="jrcolwrapper">
                 <div class="jsecondary-menu-container">
