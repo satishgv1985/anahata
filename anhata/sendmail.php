@@ -104,7 +104,7 @@ if(!$visitormail == "" && (!strstr($visitormail,"@") || !strstr($visitormail,"."
 
 $message = " $todayis [EST] \n
 Name, Vorname: $visitorname \n
-Die Arbeit des Vereins will ich unterstützen als:   $donationtype \n 
+Die Arbeit des Vereins will ich unterstützen als: $donationtype \n 
 Geburtstag: $dob \n
 Straße: $street\n
 PLZ, Ort: $place\n
@@ -118,7 +118,7 @@ $from = "From: $visitormail\r\n";
 
                 $mail_sent =mail("monika.mueller.indienhilfe@anahata-ev.de", $subject, $message, $from);
                 echo "<span style=\"margin:5px; top:15px; height:30px;\"><b>";
-echo $mail_sent ? "Mail sent Successfully" : "Mail failed";
+echo $mail_sent ? "Mail sent Successfully" : "Mail failed. Please Give Valid Email Id";
                 echo "</b></span>";
                 
 
