@@ -1,8 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Contact Us - Anahata</title>
+     <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" />
+    <title>Contactez-nous - Anahata</title>
     <link rel="stylesheet" type="text/css" href="css/jstyle.css" />
 </head>
 
@@ -15,7 +15,7 @@
             </div>
 <div class="jinner-content">
                 <h1>
-                    Contact Us</h1>
+                    Contactez-nous</h1>
                    <?php
 
                    $todayis = date("l, F j, Y, g:i a") ;
@@ -53,7 +53,7 @@
 
 
 
-                   $subject = "Membership"; 
+                   $subject = "Adhésion"; 
                    if(isset($_POST['donation']))
                    {
                    	$donationtype="As per Donation ";
@@ -65,22 +65,22 @@
                    }
 
                    $message = " $todayis [EST] \n
-Name, First Name: $visitorname \n
-How can you support society: $donationtype \n 
-Date of Birth: $dob \n
+Nom, Prénom: $visitorname \n
+Comment pouvez-vous soutenir la société: $donationtype \n 
+Date de naissance: $dob \n
 Street: $street\n
-Place, PIN: $place\n
-Telefon: $phone\n
+Placer, PIN: $place\n
+Téléphone: $phone\n
 Handy: $handy\n
-From E-Mail: $visitorname ($visitormail)\n
+À partir de E-Mail: $visitorname ($visitormail)\n
 
 ";
 
-                   $from = "From: $visitormail\r\n";
+                   $from = "À partir de: $visitormail\r\n";
 
                    $mail_sent =mail("monika.mueller.indienhilfe@anahata-ev.de", $subject, $message, $from);
                    echo "<span style=\"margin:5px; top:15px; height:30px;\"><b>";
-                   echo $mail_sent ? "Mail sent Successfully" : "Mail failed. Please Give Valid Email Id";
+                   echo $mail_sent ? "Mail envoyé avec succès" : "Sent a échoué. Donnez s'il vous plaît Email Id Suffrages";
                    echo "</b></span>";
                    
 
