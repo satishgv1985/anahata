@@ -25,7 +25,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img height="8" width="12" src="images/arrow2.gif" /><a class="sitemapLink" href="index.html">Anhata
+                                    <img height="8" width="12" src="images/arrow2.gif" /><a class="sitemapLink" href="index.php">Anhata
                                         Hausseite</a></td>
                             </tr>
                             <tr>
@@ -33,13 +33,13 @@
                                     <table cellspacing="4" cellpadding="0" border="0">
                                         <tr>
                                             <td>
-                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="all-about-us.html">Wir
+                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="all-about-us.php">Wir
                                                     über uns</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="sai-maa-services.html">Sai
+                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="sai-maa-services.php">Sai
                                                     Maa Dienstleistungen</a>
                                             </td>
                                         </tr>
@@ -48,17 +48,17 @@
                                                 <table cellpadding="4" cellspacing="0" border="0">
                                                     <tr>
                                                         <td>
-                                                            <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="woman-empowerment.html">Women Empowerment</a>
+                                                            <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="woman-empowerment.php">Women Empowerment</a>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <img height="14" width="11" src="images/dotline.gif" /> <a class="sitemapLink" href="organic-farming.html">Organic Farming</a>
+                                                            <img height="14" width="11" src="images/dotline.gif" /> <a class="sitemapLink" href="organic-farming.php">Organic Farming</a>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="keep-clean.html">Keep Clean - Make Green</a>
+                                                            <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="keep-clean.php">Keep Clean - Make Green</a>
                                                         </td>
                                                     </tr>
                                                     
@@ -67,22 +67,22 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="photo-gallery.html">Foto-Galerie</a>
+                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="photo-gallery.php">Foto-Galerie</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="videos.html">Videos</a>
+                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="videos.php">Videos</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="contact-us.html">Kontakt</a>
+                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="contact-us.php">Kontakt</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="donate.html">Schenken</a>
+                                                <img height="14" width="11" src="images/dotline.gif" /><a class="sitemapLink" href="donate.php">Schenken</a>
                                             </td>
                                         </tr>
                                     </table>
@@ -99,4 +99,4 @@
 <?php include("footer.php"); ?>
 </div>
     </body>
-</html>
+<.php>

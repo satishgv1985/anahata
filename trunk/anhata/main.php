@@ -2,15 +2,15 @@
                 <div class="jbanner">
                     <div id="slider2" class="sliderwrapper imageplaceholder">
                         <div class="contentdiv">
-                            <a href="photo-gallery.html">
+                            <a href="photo-gallery.php">
                                 <img style="border-style: none;" src="slider-images/1.jpg" width="597px" height="232px" /></a>
                         </div>
                         <div class="contentdiv">
-                            <a href="photo-gallery.html">
+                            <a href="photo-gallery.php">
                                 <img style="border-style: none;" src="slider-images/2.jpg" width="597px" height="232px" /></a>
                         </div>
                         <div class="contentdiv">
-                            <a href="photo-gallery.html">
+                            <a href="photo-gallery.php">
                                 <img style="border-style: none;" src="slider-images/3.jpg" width="597px" height="232px" /></a>
                         </div>
                     </div>
