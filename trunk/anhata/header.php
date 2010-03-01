@@ -97,6 +97,7 @@ $parts = Explode('/', $currentFile);
 if ((strpos($currentFile, 'all-about-us') == true) 
 	|| (strpos($currentFile, 'index') == true)
 	|| (strpos($currentFile, 'sitemap') == true)
+	|| (strpos($currentFile, 'news-letter') == true)
 	) 
 {
 	echo 'var e = document.getElementById("allAboutUs");';

@@ -10,7 +10,9 @@ if (strpos($currentFile, 'e_') == true)
                             <li><a href="e_map.php">Map</a></li>
                             <li><a href="e_woman-empowerment.php">Women Empowerment</a></li>
                             <li><a href="e_organic-farming.php">Organic Farming</a></li>
-                            <li><a href="e_keep-clean.php">Keep Clean - Make Green</a></li><li><a href="e_links.php">Links</a></li>
+                            <li><a href="e_keep-clean.php">Keep Clean - Make Green</a></li>
+                            <li><a href="e_links.php">Links</a></li>
+                            <li><a href="e_news-letter.php">News Letter</a></li>
                         </ul>
                         <h2>
                             News</h2>
@@ -39,12 +41,14 @@ else if (strpos($currentFile, 'f_') == true)
                             <li><a href="f_map.php">Map</a></li>
                             <li><a href="f_woman-empowerment.php">Women Empowerment</a></li>
                             <li><a href="f_organic-farming.php">Organic Farming</a></li>
-                            <li><a href="f_keep-clean.php">Keep Clean - Make Green</a></li><li><a href="e_links.php">Links</a></li>
+                            <li><a href="f_keep-clean.php">Keep Clean - Make Green</a></li>
+                            <li><a href="f_links.php">Links</a></li>
+                            <li><a href="f_news-letter.php">News Letter</a></li>
                         </ul>
                         <h2>
                             Nouvelles</h2>
                         <ul>
-                            <li><a href="f_news-mobile-tailoring-school.php">Mobile School adaptation de Sai Maa Société...08/02/2010</a></li>
+                            <li><a href="f_news-mobile-tailoring-school.php">Mobile ADAPTATION SCOLAIRE DU Sai Maa société...08/02/2010</a></li>
                             
                         </ul>
                         <h2>
@@ -69,6 +73,7 @@ else
 	<li><a href="organic-farming.php">Organic Farming</a></li>
 	<li><a href="keep-clean.php">Keep Clean - Make Green</a></li>
 	<li><a href="links.php">Links</a></li>
+	<li><a href="news-letter.php">News Letter</a></li>
 </ul>
 <h2>Nachrichten</h2>
                         <ul>

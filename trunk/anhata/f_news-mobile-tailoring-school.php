@@ -15,15 +15,16 @@
    <div class="jleft-column">
                 <div class="jtext-area" style="padding: 0px 16px 0px 32px;">
                     <h2>
-                        Mobile TAILORING SCHOOL of Sai Maa Society...08/02/2010</h2>
+                        Mobile ADAPTATION SCOLAIRE DU Sai Maa société...08/02/2010</h2>
                     <div style="vertical-align: text-top; float: left;">
                         <p style="text-align: justify; padding: 5px;">
-                            The mobile TAILORING SCHOOL of Sai Maa Society shifted to the third Village, Chandrayanapalli,
-                            on February 8. 40 Girls and young women are going to learn tailoring for six months
-                            in four batches. They have five machines now and will get sponsor two more. After
-                            completing the training they will get a certificate that allows them to take a credit
-                            by the State Bank of India to buy their own tailoring machines. They can earn themselves
-                            by stitching school uniforms, dresses and blouses.
+                            L’école mobile de couture de la société SAIMAA a déménagé vers le troisième village Chandravanapalli, le 8 février.
+</p>                    <p style="text-align: justify; padding: 5px;">
+Quarante filles et jeunes femmes vont apprendre la couture pendant six mois en quatre groupes. Elles ont cinq machines à coudre en ce moment et vont en recevoir deux autres bientôt.
+</p>                    <p style="text-align: justify; padding: 5px;">
+Après leur formation, elles recevront un certificat avec lequel elles pourront obtenir un crédit à la State Bank of India afin de pouvoir acquérir leur propre machine à coudre.
+</p>                    <p style="text-align: justify; padding: 5px;">
+Ainsi elles pourront gagner leur vie en cousant des uniformes pour les écoles, des robes et des blouses.
                         </p>
                     </div>
                  
