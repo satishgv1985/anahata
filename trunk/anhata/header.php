@@ -37,18 +37,21 @@ if (strpos($currentFile, 'e_') == true)
 echo '<li><a href="e_sitemap.php">Site-Map</a></li>';
 echo "<li><a href='".substr(end($parts),2)."'>Deutsche Version</a></li>";
 echo "<li><a href='f_".substr(end($parts),2)."'>French Version</a></li>";
+echo "<li style='background-image:none'><a href='".end($parts)."'><b>English Version</b></a></li>";
 	} 
 else if (strpos($currentFile, 'f_') == true) 
 	{
 echo '<li><a href="f_sitemap.php">Plan du site</a></li>';
-echo "<li><a href='e_".substr(end($parts),2)."'>English Version</a></li>";
-echo "<li><a href='".substr(end($parts),2)."'>Deutsche Version</a></li>";    	
+echo "<li><a href='".substr(end($parts),2)."'>Deutsche Version</a></li>"; 
+echo "<li><a href='".end($parts)."'><b>French Version</b></a></li>"; 
+echo "<li style='background-image:none'><a href='e_".substr(end($parts),2)."'>English Version</a></li>";  	
 	}
 else
 	{
 echo '<li><a href="sitemap.php">Seite-Karte</a></li>';
-echo "<li><a href='e_".end($parts)."'>English Version</a></li>";
+echo "<li><a href='".end($parts)."'><b>Deutsche Version</b></a></li>";
 echo "<li><a href='f_".end($parts)."'>French Version</a></li>";
+echo "<li style='background-image:none'><a href='e_".end($parts)."'>English Version</a></li>";
 	}
 
 	?>

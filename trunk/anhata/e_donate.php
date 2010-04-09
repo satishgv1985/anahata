@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" />
-<title>Schenken - Anahata</title>
+<title>Donate - Anahata</title>
 <link rel="stylesheet" type="text/css" href="css/jstyle.css" />
 </head>
 
