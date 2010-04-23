@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" />
-<title>News Letter - Anahata</title>
+<title>Nachrichten - Anahata</title>
 <link rel="stylesheet" type="text/css" href="css/jstyle.css" />
 </head>
 
@@ -12,11 +12,11 @@
 <div class="jcontent-area">
 
 <div class="jleft-column">
-<h2>News Letter</h2>
+<h2>Nachrichten</h2>
 <table style="margin-left: 16px; margin-right: 16px;">
 	<tr>
 		<td colspan="2">
-		<h2>Wasserbüffel</h2>
+		<h2><a name="bufallo">Wasserbüffel</a></h2>
 		<br />
 		</td>
 	</tr>
@@ -53,7 +53,7 @@
 <table style="margin-left: 16px; margin-right: 16px;">
 	<tr>
 		<td colspan="2">
-		<h2>Bankkonto</h2>
+		<h2><a name="bank">Bankkonto</a></h2>
 		<br />
 		</td>
 
@@ -78,7 +78,7 @@
 <table style="margin-left: 16px; margin-right: 16px;">
 	<tr>
 		<td colspan="2">
-		<h2>Eco-Clubs</h2>
+		<h2><a name="eco">Eco-Clubs</a></h2>
 		<br />
 		</td>
 	</tr>

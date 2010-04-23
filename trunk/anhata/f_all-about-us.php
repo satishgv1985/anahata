@@ -32,7 +32,7 @@ ainsi que le rosé clair.</p>
 amour équilibré est très important. Notre engagement pour les enfants et
 les personnes agées amène aussi un rééquilibrage entre les générations,
 un contacte poli et gentil. Les respect de la nature et des ressources
-exixtentes devient de plus en plus important. Aux Indes de ces jours, la
+existentes devient de plus en plus important. Aux Indes de ces jours, la
 structure familiale des grandes familles se perd aussi de plus en plus.
 Le pays agricole ne suffit plus a alimenter les petits fermiers. La
 classe moyenne avec ses artisans disparait dans les petits villages pour

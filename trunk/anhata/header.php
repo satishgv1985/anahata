@@ -134,6 +134,7 @@ else if((strpos($currentFile, 'sai-maa-services') == true)
 		|| (strpos($currentFile, 'organic-farming') == true)
 		|| (strpos($currentFile, 'woman-empowerment') == true)
 		|| (strpos($currentFile, 'links') == true)
+		|| (strpos($currentFile, 'bath-rooms-siddapuram') == true)
 		)
 {
 	echo 'var e = document.getElementById("saiMaaServices");';

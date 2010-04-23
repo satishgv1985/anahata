@@ -1,8 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Halten Sie Sauber - Machen Grün - Anhata</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Keep Clean – Make Green</title>
     <link rel="stylesheet" type="text/css" href="css/jstyle.css" />
 </head>
 
@@ -16,7 +16,7 @@
   <div class="jleft-column">
                 <div class="jtext-area">
                     <h1>
-                        Halten Sie Sauber - Machen Grün
+                        Keep Clean – Make Green
                     </h1>
                     <p style="text-align: justify; padding: 5px;">
                         Ist ein grossartiges Programm, um den vergangenen Glanz der Dörfer wieder herzustellen.
