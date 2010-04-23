@@ -16,7 +16,7 @@
 <table style="margin-left: 16px; margin-right: 16px;">
 	<tr>
 		<td colspan="2">
-		<h2>Les buffles</h2>
+		<h2><a name="bufallo">Les buffles</a></h2>
 		<br />
 		</td>
 	</tr>
@@ -60,7 +60,7 @@
 <table style="margin-left: 16px; margin-right: 16px;">
 	<tr>
 		<td colspan="2">
-		<h2>Comptes en banque pour le personnel</h2>
+		<h2><a name="bank">Comptes en banque pour le personnel</a></h2>
 		<br />
 		</td>
 	</tr>
@@ -86,7 +86,7 @@
 <table style="margin-left: 16px; margin-right: 16px;">
 	<tr>
 		<td colspan="2">
-		<h2>Eco-Clubs</h2>
+		<h2><a name="eco">Eco-Clubs</a></h2>
 		<br />
 		</td>
 	</tr>

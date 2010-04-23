@@ -1,8 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Bio-Bauernhof - Anahata</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Bio-Landwirtschaftschulung und Demo-Bio-Farmen - Anahata</title>
     <link rel="stylesheet" type="text/css" href="css/jstyle.css" />
 </head>
 
@@ -14,7 +14,7 @@
    <div class="jleft-column">
                 <div class="jtext-area" style="padding: 0px; margin: 16px 16px 12px 32px;">
                     <h1>
-                        Bio-Bauernhof
+                        Bio-Landwirtschaftschulung und Demo-Bio-Farmen
                     </h1>
                     <p style="text-align: justify; padding: 5px;">
                         Früher wurde natürlich auch in Indien biologisch angebaut. Aber heutzutage durch
